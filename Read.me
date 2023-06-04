@@ -1,1 +1,70 @@
 # Segmenatation_deeplabv3
+
+# Segmentation_DeepLabV3
+
+This repository contains an implementation of the DeepLabV3 model for image segmentation. The DeepLabV3 model is a deep learning architecture that is widely used for pixel-level semantic segmentation tasks. This implementation utilizes the power of convolutional neural networks (CNNs) and the benefits of dilated convolutions to achieve accurate and efficient segmentation results.
+
+## Installation
+
+To use the Segmentation_DeepLabV3 code, follow the steps below:
+
+1. Clone this repository to your local machine using the following command:
+
+   ```
+   git clone https://github.com/your-username/Segmentation_DeepLabV3.git
+   ```
+
+2. Install the required dependencies by running the following command:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+   This will install all the necessary libraries and packages needed to run the code.
+
+## Usage
+
+The Segmentation_DeepLabV3 codebase provides a user-friendly interface to train and evaluate the DeepLabV3 model for image segmentation tasks. The main steps to use the code are as follows:
+
+1. **Data Preparation**: Organize your dataset in the desired directory structure. The dataset should be divided into two folders: one for input images and one for corresponding ground truth masks. The file names of the images and masks should match.
+
+2. **Configuration**: Adjust the configuration parameters in the `config.py` file according to your requirements. Specify the paths to your dataset, the model hyperparameters, and other settings such as batch size, learning rate, etc.
+
+3. **Training**: To train the DeepLabV3 model, run the following command:
+
+   ```
+   python train.py
+   ```
+
+   The training script will load the dataset, initialize the model, and start the training process. It will save the model checkpoints and the training logs to the specified directories.
+
+4. **Inference**: Once the model is trained, you can use it to perform inference on new images. To do this, run the following command:
+
+   ```
+   python inference.py --image_path path_to_image.jpg
+   ```
+
+   Replace `path_to_image.jpg` with the path to the image you want to perform segmentation on. The script will load the trained model checkpoint and generate a segmentation mask for the input image.
+
+## Contributing
+
+If you want to contribute to this project, you can follow these steps:
+
+1. Fork this repository.
+
+2. Create a new branch with a descriptive name for your feature or bug fix.
+
+3. Make your modifications and improvements.
+
+4. Test your changes thoroughly.
+
+5. Commit your changes and push the branch to your forked repository.
+
+6. Create a pull request, explaining your changes in detail and providing any necessary documentation.
+
+Please ensure that your contributions adhere to the coding standards and practices observed in this project.
+
+
+## Acknowledgments
+
+The implementation of the DeepLabV3 model in this repository is based on the original paper "Rethinking Atrous Convolution for Semantic Image Segmentation" by L.-C. Chen et al. I would like to acknowledge the authors for their valuable contributions.
